@@ -1,0 +1,17 @@
+<ActionBar title="Pokémon of Today" class="navbar-dark bg-dark">
+	<ng-template #web>
+		<app-navbar-menu></app-navbar-menu>
+	</ng-template>
+</ActionBar>
+<Container>
+	<!-- Refs:
+    https://stackoverflow.com/a/52750695/2393762
+    https://stackoverflow.com/a/43327466/2393762
+  -->
+	<app-pokemon-info *ngIf="(pokemon$ | async) as pokemon; else loading" [pokemon]="pokemon"></app-pokemon-info>
+	<ng-template #loading>
+		<GridLayout class="" rows="*" columns="*">
+			<Label class="h1 text-center align-self-center" text="Loading..."></Label>
+		</GridLayout>
+	</ng-template>
+</Container>
