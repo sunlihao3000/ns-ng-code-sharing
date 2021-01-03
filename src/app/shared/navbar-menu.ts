@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
+
 @Component({
 	selector: 'app-navbar-menu',
 	template: `
@@ -12,7 +13,11 @@ import { Router } from '@angular/router';
 </li>
 <li class="nav-item" [ngClass]="{active: isCurrentRoute(['pokedex', 'pokemon'])}">
 	<a class="nav-link" [routerLink]="['/', 'app', 'pokedex']">Pokédex <span *ngIf="isCurrentRoute(['pokedex', 'pokemon'])" class="sr-only">(current)</span></a>
-</li>`
+</li>
+<li class="nav-item" [ngClass]="{active: isCurrentRoute('book')}">
+	<a class="nav-link" [routerLink]="['/', 'app', 'book']">Book <span *ngIf="isCurrentRoute('book')" class="sr-only">(current)</span></a>
+</li>
+`
 })
 export class NavbarMenu {
 

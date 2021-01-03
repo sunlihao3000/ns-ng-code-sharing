@@ -23,11 +23,12 @@ import { TodayPage } from '@src/app/pages/today/today.page';
 import { RandomPage } from '@src/app/pages/random/random.page';
 import { PokedexPage } from '@src/app/pages/pokedex/pokedex.page';
 import { PokemonPage } from '@src/app/pages/pokemon/pokemon.page';
+import { BookPage } from './pages/book/book.page';
 
 
 
 
-let pages = [HomePage, TodayPage, RandomPage, PokedexPage, PokemonPage];
+let pages = [HomePage, TodayPage, RandomPage, PokedexPage, PokemonPage,BookPage];
 let directives = [HideActionBarDirective];
 let components = [PlatformViewComponent, ContainerComponent, PokemonInfoComponent, NavbarMenu]
 

@@ -7,6 +7,7 @@ import { TodayPage } from '@src/app/pages/today/today.page';
 import { RandomPage } from '@src/app/pages/random/random.page';
 import { PokedexPage } from './pages/pokedex/pokedex.page';
 import { PokemonPage } from './pages/pokemon/pokemon.page';
+import { BookPage } from './pages/book/book.page';
 
 
 export const routes: Routes = [
@@ -19,6 +20,8 @@ export const routes: Routes = [
 			{ path: 'random', component: RandomPage, },
 			{ path: 'pokedex', component: PokedexPage, },
 			{ path: 'pokemon/:number', component: PokemonPage, },
+			{ path: 'book', component: BookPage, },
+
 		]
 	}
 ];

@@ -1,0 +1,1 @@
+/Users/bobby/my works/git-nativescript-pokedex/ns-ng-code-sharing/ns-ng-code-sharing/platforms/android/app/src/main/assets/app
